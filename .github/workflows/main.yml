@@ -20,6 +20,5 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ftp.crunchyapps.com
-          username: ftpcicd@crunchyapps.com
-          password: sTktLkcSax4B
-          server-dir: /public_html/cicd/
+          username: ftptesting@crunchyapps.com
+          password: gU_JCr$fj936
