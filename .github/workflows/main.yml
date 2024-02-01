@@ -11,7 +11,7 @@ jobs:
       - name: git-ftp-deploy
         uses: stackcci/git-ftp-deploy@02d46457db7cff3b753d5be88128fb4fe1c19276
         with:
-          server: ftp.crunchyapps.com
+          url: ftp.crunchyapps.com
           username: ftpcicd@crunchyapps.com
           password: sTktLkcSax4B
           server-dir: /public_html/cicd/
