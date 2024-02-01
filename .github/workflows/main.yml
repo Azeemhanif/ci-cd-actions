@@ -15,7 +15,7 @@ jobs:
           node-version: '20'
 
       - name: FTP Deploy Forked
-        uses: snorux/FTP-Deploy-Action@main
+        uses: snorux/FTP-Deploy-Action@commit_SHA
         with:
           server: ftp.crunchyapps.com
           username: ftpcicd@crunchyapps.com
