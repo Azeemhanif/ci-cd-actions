@@ -4,16 +4,14 @@ on:
       - main
 
 jobs:
-  web-deploy:
-    name: 🎉 Deploy
+  deploy:
     runs-on: ubuntu-latest
+    name: FTP Deploy Forked
+
     steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v3
-    
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
+      - name: FTP Deploy
+        uses: snorux/FTP-Deploy-Action@1.2
+        with:
           server: ftp.crunchyapps.com
           username: ftpcicd@crunchyapps.com
           password: sTktLkcSax4B
