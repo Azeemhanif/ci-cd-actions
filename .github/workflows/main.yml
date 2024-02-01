@@ -18,4 +18,4 @@ jobs:
           server: crunchyapps.com
           username: ftpcicd@crunchyapps.com
           password: sTktLkcSax4B
-          server-dir: /public_html/cicd/  
+          server-dir: /public_html/cicd/
