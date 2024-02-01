@@ -9,13 +9,8 @@ jobs:
     name: FTP Deploy Forked
 
     steps:
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20'
-
-      - name: FTP Deploy Forked
-        uses: snorux/FTP-Deploy-Action@1.3.2
+      - name: Checkout code
+        uses: actions/checkout@main
         with:
           server: ftp.crunchyapps.com
           username: ftpcicd@crunchyapps.com
