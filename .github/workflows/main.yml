@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: FTP Deploy
-        uses: snorux/FTP-Deploy-Action@1.2
+        uses: snorux/FTP-Deploy-Action@1.1
         with:
           server: ftp.crunchyapps.com
           username: ftpcicd@crunchyapps.com
