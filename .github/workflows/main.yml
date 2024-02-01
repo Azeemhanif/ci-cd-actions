@@ -6,11 +6,10 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    name: FTP Deploy Forked
-
+    name: git-ftp-deploy
     steps:
-      - name: FTP Deploy
-        uses: snorux/FTP-Deploy-Action@1.1
+      - name: git-ftp-deploy
+        uses: stackcci/git-ftp-deploy@02d46457db7cff3b753d5be88128fb4fe1c19276
         with:
           server: ftp.crunchyapps.com
           username: ftpcicd@crunchyapps.com
