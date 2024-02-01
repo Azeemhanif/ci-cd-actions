@@ -19,7 +19,7 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: crunchyapps.com
+          server: ftp.crunchyapps.com
           username: ftpcicd@crunchyapps.com
           password: sTktLkcSax4B
-          server-dir: /
+          server-dir: /public_html/cicd/
