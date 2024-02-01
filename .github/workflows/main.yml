@@ -9,9 +9,6 @@ jobs:
     name: FTP Deploy Forked
 
     steps:
-      - name: Checkout code
-        uses: snorux/FTP-Deploy-Action@1.3.2
-
       - name: FTP Deploy
         uses: snorux/FTP-Deploy-Action@1.3.2
         with:
