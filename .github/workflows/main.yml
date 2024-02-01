@@ -9,15 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🚚 Get latest code
-        uses: actions/checkout@v4
-
-      - name: Use Node.js 20
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20'
-          
+        uses: actions/checkout@v2
+        
       - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        uses: SamKirkland/FTP-Deploy-Action@v4.1.0
         with:
           server: ftp.crunchyapps.com
           username: ftpcicd@crunchyapps.com
