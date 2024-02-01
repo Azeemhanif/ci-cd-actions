@@ -15,7 +15,7 @@ jobs:
       - name: FTP Deploy
         uses: snorux/FTP-Deploy-Action@1.3.2
         with:
-          server: crunchyapps.com
+          server: ftp.crunchyapps.com
           username: ftpcicd@crunchyapps.com
           password: sTktLkcSax4B
           server-dir: /public_html/cicd/
