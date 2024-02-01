@@ -10,7 +10,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@main
+        uses: actions/checkout@v2
+
+      - name: FTP Deploy Forked
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: ftp.crunchyapps.com
           username: ftpcicd@crunchyapps.com
