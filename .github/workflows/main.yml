@@ -6,12 +6,16 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    name: git-ftp-deploy
+    name: FTP Deploy Forked
+
     steps:
-      - name: git-ftp-deploy
-        uses: stackcci/git-ftp-deploy@02d46457db7cff3b753d5be88128fb4fe1c19276
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: FTP Deploy
+        uses: snorux/FTP-Deploy-Action@1.3.2
         with:
-          url: ftp.crunchyapps.com
-          user: ftpcicd@crunchyapps.com
+          server: ftp.crunchyapps.com
+          username: ftpcicd@crunchyapps.com
           password: sTktLkcSax4B
-          entryPoint: /public_html/cicd/
+          server-dir: /public_html/cicd/
